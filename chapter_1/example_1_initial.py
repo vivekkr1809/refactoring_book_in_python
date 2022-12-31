@@ -30,7 +30,6 @@ def invoice_statement(invoice, plays):
         else:
             print(f"Unknown play type {play['type']}")
 
-    
         # Add volume credits
         volume_credits += max(perf["audiences"] - 30, 0.0)
 
@@ -50,7 +49,6 @@ def invoice_statement(invoice, plays):
 
 def main():
     customer_invoice = "./chapter_1/invoices.json"
-
     customer_plays = "./chapter_1//plays.json"
     print(invoice_statement(customer_invoice, customer_plays))
 
